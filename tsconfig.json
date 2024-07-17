@@ -6,7 +6,7 @@
     "allowJs": true,
     "lib": ["ESNext"],
     "module": "NodeNext",
-    "target": "ES2017",
+    "target": "ES6",
     "strict": true,
     "esModuleInterop": true,
     "noImplicitAny": true,
