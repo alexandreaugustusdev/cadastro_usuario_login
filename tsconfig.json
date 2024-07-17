@@ -1,27 +1,26 @@
 {
-    "compilerOptions": {
-        "allowJs": true,
-        "lib": ["es2020", "es6", "dom"],
-        "module": "commonjs",
-        "target": "es2020",
-        "strict": true,
-        "esModuleInterop": true,
-        "noImplicitAny": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "useUnknownInCatchVariables": false,
-        "outDir": "build",
-        "plugins": [{
-            "transform": "ts-auto-mock/transformer",
-            "cacheBetweenTests": false
-        }]
-    },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "node_modules",
-        "build",
-        "bower_components"
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "baseUrl": "./",
+    "paths": { "@types/*": ["src/@types/*"] },
+    "allowJs": true,
+    "lib": ["ESNext"],
+    "module": "NodeNext",
+    "target": "ES2017",
+    "strict": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "useUnknownInCatchVariables": false,
+    "outDir": "build",
+    "plugins": [
+      {
+        "transform": "ts-auto-mock/transformer",
+        "cacheBetweenTests": false
+      }
     ]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "bower_components"]
 }
